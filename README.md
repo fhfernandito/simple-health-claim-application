@@ -72,7 +72,7 @@ simple-health-claim-application/
 ### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/fhfernandito/simple-health-claim-application.git
 cd simple-health-claim-application
 ```
 
