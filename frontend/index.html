@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple Health Claim Application - Insurance Claim Management System">
+    <title>Simple Health Claim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
+<style>
+  /* All text — Manrope */
+html, body, .v-application,
+h1, h2, h3, h4, h5, h6,
+.text-display-large, .text-display-medium, .text-display-small,
+.text-headline-large, .text-headline-medium, .text-headline-small,
+.text-title-large, .text-title-medium, .text-title-small,
+.text-body-large, .text-body-medium, .text-body-small,
+.text-label-large, .text-label-medium, .text-label-small {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+p {
+  line-height: normal !important;
+  margin: 0 !important;
+}
+
+/* scrollbar thin */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(179, 179, 179);
+}
+
+/* View Transition API — theme toggle circular animation */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+</style>
