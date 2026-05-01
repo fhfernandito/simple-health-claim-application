@@ -227,7 +227,7 @@ const isDark = computed({
   get: () => theme.global.name.value === "dark",
   set: (v) => {
     const name = v ? "dark" : "light";
-    theme.global.name.value = name;
+    theme.change(name);
     localStorage.setItem('theme', name);
   },
 });
