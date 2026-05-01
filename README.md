@@ -99,13 +99,13 @@ Ini akan menjalankan 3 container:
 **b. Install dependencies & setup database:**
 
 ```bash
-docker exec -it laravel_app composer install
+docker compose exec app composer install
 
-docker exec -it laravel_app php artisan key:generate
+docker compose exec app php artisan key:generate
 
-docker exec -it laravel_app php artisan migrate
+docker compose exec app php artisan migrate
 
-docker exec -it laravel_app php artisan db:seed
+docker compose exec app php artisan db:seed
 ```
 
 **c. Verifikasi backend berjalan:**
@@ -280,14 +280,14 @@ docker compose down
 docker compose logs -f app
 
 # Masuk ke container
-docker exec -it laravel_app bash
+docker compose exec app bash
 
 # Re-run migration (reset database)
-docker exec -it laravel_app php artisan migrate:fresh --seed
+docker compose exec app php artisan migrate:fresh --seed
 
 # Clear cache
-docker exec -it laravel_app php artisan config:clear
-docker exec -it laravel_app php artisan cache:clear
+docker compose exec app php artisan config:clear
+docker compose exec app php artisan cache:clear
 ```
 
 ## Access Points
